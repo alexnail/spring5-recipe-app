@@ -15,7 +15,7 @@ public class Ingredient {
     private String description;
     private BigDecimal amount;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     private UnitOfMeasure uom;
 
     @ManyToOne
